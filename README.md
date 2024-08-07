@@ -4,18 +4,11 @@
 A user has received a phishing email and forwarded it to the SOC. Can you investigate the email and attachment to collect useful artifacts?
 <br />
 
-
-<h2>Languages and Commands Used</h2>
-
-- <b>Bash Shell </b> 
-- <b>ls</b>
-- <b>chmod</b>
-
 <h2>Environments Used </h2>
 
-- <b>Linux Server</b> 
+- <b>BlueTeamLabs.online</b> 
 
-<h2>Program walk-through:</h2>
+<h2>Lab walk-through:</h2>
 
 <p align="center">
 Check file and directory details: <br/>
