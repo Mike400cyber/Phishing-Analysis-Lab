@@ -11,28 +11,24 @@ A user has received a phishing email and forwarded it to the SOC. Can you invest
 <h2>Lab walk-through:</h2>
 
 <p align="center">
-Check file and directory details: <br/>
-<img src="https://imgur.com/OxTW10y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Who is the primary recipient of the email? <br/>
+<img src="https://imgur.com/Rb96HWR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<h2>ls command (Check file and directory details)</h2>
-I used the ls -l command to generate a detailed listing of all files and directories within the "projects" directory. ls -la could also be used to include hidden files and displayed permissions, ownership, and other relevant details for each item. The output showed one directory (drafts), and four other project files. The permissions were displayed as 10-character strings, representing the access levels for the user, group, and others.
 <br />
 <h2></h2>
 <p align="center">
-Change file permissions: "other" shouldn't have write access to any files <br/>
-<img src="https://imgur.com/QjUghzR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+What is the original IP? <br/>
 <br /> 
-<p align="center">
-Change file permissions on a hidden file: read-only permissions "group & user" for file .project_x.txt <br/>
-<img src="https://imgur.com/VZ8BItO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /> 
-<h2>chmod command (Change file permissions)</h2>
-First I managed file permissions within the "projects" directory to ensure security and proper authorization. I used the chmod command to modify the permissions of specific files and directories. For instance, I removed write permissions for the "other" category on the project_k.txt file. This action ensured that unauthorized users could not modify the file. <br />
+<img src="https://imgur.com/AuFlsrS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Secondly, I identified .project_x.txt as a hidden file due to its name starting with a period (.). I then modified its permissions using the chmod command.
-I added read permissions for the group with g=r.
-I added read permissions for the user with u=r. 
-Using = for both "user" and "group" categories overwrites all previous permissions and executes read permissions only.
+<br />
+<h2></h2>
+<p align="center">
+Perform reverse DNS on this IP address, what is the resolved host? (whois.domaintools.com) <br/>
+<br />
+<img src="https://imgur.com/fibqbTe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br /> 
+<br />
 <br />
 <h2></h2> 
 <p align="center">
