@@ -6,7 +6,8 @@ A user has received a phishing email and forwarded it to the SOC. Can you invest
 
 <h2>Environments Used </h2>
 
-- <b>BlueTeamLabs.online</b> 
+- <b>BlueTeamLabs.online</b>
+- <b>whois.domaintools.com</b> 
 
 <h2>Lab walk-through:</h2>
 
